@@ -1,1 +1,1 @@
-
+document.addEventListener("DOMContentLoaded",()=>{const y=document.getElementById("year");if(y)y.textContent=new Date().getFullYear();const t=document.querySelector(".menu-toggle"),n=document.querySelector(".site-header nav");if(t&&n)t.onclick=()=>n.classList.toggle("open");const f=document.getElementById("contactForm");if(f)f.onsubmit=e=>{e.preventDefault();document.getElementById("formMessage").textContent="Formulario de demostración: la consulta fue validada. Para recibir mensajes reales debes conectarlo a un servicio de formularios.";f.reset()}});
